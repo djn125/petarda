@@ -1,13 +1,45 @@
+section.top{
+    background-image: url('../images/background_image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+section.top .container .top-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+section.top .container .top-wrapper .text{
+    color: #fff;
+    right:0;
+    bottom: 0px;
+    
+}
 section.footer {
     background-color:#d8d8d8;
 }
 
+section.top .container .top-wrapper .text h1{
+    font-size: 100pt;
+    font-weight: 600;
+}
+section.top .container .top-wrapper .text p:first-child{
+    font-size: 54pt;
+    font-weight: 400;
+}
+section.top .container .top-wrapper .text p:last-child{
+    font-size: 18pt;
+    font-weight: 400;
+}
 section.footer .container .footer-wrapper {
     display:flex;
     width:100%;
     padding:30px;
     justify-content:space-between;
 }
+
+
 
 
 
