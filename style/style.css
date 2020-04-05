@@ -1,0 +1,35 @@
+section.footer {
+    background-color:#d8d8d8;
+}
+
+section.footer .container .footer-wrapper {
+    display:flex;
+    width:100%;
+    padding:30px;
+    justify-content:space-between;
+}
+
+
+
+section.footer .container .footer-wrapper button {
+    border:none;
+    background: url("../images/arrow.png");
+    width:23px;
+    height:16px;
+    outline: none;
+}
+
+section.footer .container .footer-wrapper div.facebook {
+    
+}
+
+@media screen and (max-width:425px) {
+    section.footer .container .footer-wrapper {
+        flex-wrap:wrap-reverse;
+        text-align:center;
+    }
+    section.footer .container .footer-wrapper p {
+        width:100%;
+        padding-top:40px;
+    }
+}
