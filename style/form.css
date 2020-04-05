@@ -1,0 +1,40 @@
+form {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form input, textarea {
+    width:100%;
+    margin:5px 0 30px;
+    border:1px solid #dddddd;
+    outline: none;
+    padding:8px 30px;
+    font-size:14px;
+    color:gray;
+}
+
+form input {
+    height:40px;
+}
+
+form textarea {
+    height:100px;
+    padding:15px 30px;
+}
+
+form label {
+    color:gray;
+    padding:3px 20px;
+}
+
+form p {
+    color:#3ea592;
+    font-size:0.8rem;
+}
+
+@media screen and (max-width:800px) {
+    button {
+        margin:0 auto;
+    }
+}
