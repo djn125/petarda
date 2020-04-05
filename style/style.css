@@ -6,8 +6,10 @@ section.top{
 }
 section.top .container .top-wrapper{
     display: flex;
-    flex-direction: column;
+    height:700px;
+    flex-direction: row;
     justify-content: left;
+    align-items:center;
     
 }
 section.top .container .top-wrapper .text{
@@ -24,11 +26,11 @@ section.top .container .top-wrapper .text h1{
     font-size: 100pt;
     font-weight: 600;
 }
-section.top .container .top-wrapper .text p:first-child{
-    font-size: 54pt;
+section.top .container .top-wrapper .text p:nth-of-type(1){
+    font-size: 51pt;
     font-weight: 400;
 }
-section.top .container .top-wrapper .text p:last-child{
+section.top .container .top-wrapper .text p:nth-of-type(3){
     font-size: 18pt;
     font-weight: 400;
 }
@@ -38,10 +40,6 @@ section.footer .container .footer-wrapper {
     padding:30px;
     justify-content:space-between;
 }
-
-
-
-
 
 section.footer .container .footer-wrapper button {
     border:none;
