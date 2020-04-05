@@ -58,7 +58,8 @@ h3::after {
     font-size:16px;
     font-weight:500;
     padding:10px 80px;
-    transition: all .5s;
+    transition-property: background-color, color, border;
+    transition-duration: .5s;
 }
 
 .cta:hover {
