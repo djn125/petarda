@@ -42,6 +42,14 @@ section.top .container .top-wrapper .text h1{
     padding-bottom: -24px;
 }
 
+section.top .container .top-wrapper .text h1::after{
+    content:".";
+    display:inline;
+    animation: dot 2s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
 section.top .container .top-wrapper .text p:nth-of-type(1){
     font-size: 51pt;
     font-weight: 400;

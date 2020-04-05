@@ -1,6 +1,7 @@
 @import "style.css";
 @import "form.css";
 @import "keyframes.css";
+@import "navbar.css";
 
 * {
     box-sizing: border-box;
