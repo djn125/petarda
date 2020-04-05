@@ -28,7 +28,6 @@ section.top .container .top-wrapper{
     align-items:flex-end;   
 }
 
-
 section.top .container .top-wrapper .text{
     color: #fff;
     right:0;
@@ -42,10 +41,12 @@ section.top .container .top-wrapper .text h1{
     font-weight: 600;
     padding-bottom: -24px;
 }
+
 section.top .container .top-wrapper .text p:nth-of-type(1){
     font-size: 51pt;
     font-weight: 400;
 }
+
 section.top .container .top-wrapper .text p:nth-of-type(2){
     font-size: 18pt;
     font-weight: 300;
@@ -53,6 +54,7 @@ section.top .container .top-wrapper .text p:nth-of-type(2){
     margin-top: 24px;
     line-height:32px;
 }
+
 section.top .container .top-wrapper .text a{
     padding-top: 32px;
     position: relative;
@@ -60,6 +62,7 @@ section.top .container .top-wrapper .text a{
     text-decoration: none;
     color:#fff;
 }
+
 section.top .container .top-wrapper .text a::before{
     content: "";
     background-color:#fff;
@@ -90,10 +93,6 @@ section.top .container .top-wrapper .text a::before{
         text-align: center;
     }
 }
-
-
-
-
 section.features{
     margin:72px 0;
 }
@@ -149,19 +148,26 @@ section.features .container .features-wrapper .feature-item p:nth-of-type(2){
     }
 }
 
+section.news .news-wrapper {
+    background-color:#f3f3f3;
+    margin-top:80px;
+}
 
+section.news .news-wrapper:before {
+    content: "";
+    background-color:#f3f3f3;
+    width:100px;
+    height:100px;
+    transform: rotate(45deg);
+    display:block;
+    position:relative;
+    top:-20px;
+    margin:0 auto;
+}
 
+section.news .news-wrapper .container .news-pills {
 
-
-
-
-
-
-
-
-
-
-
+}
 
 section.footer {
     background-color:#d8d8d8;
@@ -188,7 +194,6 @@ section.contact .contact-wrapper .container .form-wrapper {
 section.footer {
     background-color:#d8d8d8;
 }
-
 
 section.footer .container .footer-wrapper {
     display:flex;
