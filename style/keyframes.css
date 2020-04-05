@@ -1,0 +1,9 @@
+@keyframes arrow {
+    from {left:-50px;}
+    to {left:-38px}
+}
+
+@keyframes arrow1 {
+    from {right:-50px;}
+    to {right:-38px}
+}

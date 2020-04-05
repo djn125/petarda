@@ -1,5 +1,6 @@
 @import "style.css";
 @import "form.css";
+@import "keyframes.css";
 
 * {
     box-sizing: border-box;
