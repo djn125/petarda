@@ -54,5 +54,34 @@ h3::after {
     background:gray;
 }
 
+.cta, .cta-wh {
+    font-size:16px;
+    font-weight:500;
+    padding:10px 80px;
+    transition: all .5s;
+}
 
+.cta:hover {
+    background-color: #fff;
+    color:#3ea592;
+    border:2px solid #3ea592;
+}
+
+.cta {
+    background-color: #3ea592;
+    color:#fff;
+    border:2px solid #3ea592;
+}
+
+.cta-wh {
+    background-color: #fff;
+    color:#3ea592;
+    border:2px solid #fff;
+}
+
+.cta-wh:hover {
+    background-color: none;
+    color:#fff;
+    border:2px solid #fff;
+}
 
