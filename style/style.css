@@ -16,22 +16,25 @@ section.top::after{
     opacity: 0.5;
     z-index: 1;
 }
+
+section.top .container{
+    padding: 0 16px;
+}
 section.top .container .top-wrapper{
     display: flex;
     height:70vh;
     flex-direction: row;
     justify-content: left;
-    align-items:flex-end;
-    
-    
-    
+    align-items:flex-end;   
 }
+
+
 section.top .container .top-wrapper .text{
     color: #fff;
     right:0;
     bottom: 0px;
     z-index: 10;
-    
+     
 }
 
 section.top .container .top-wrapper .text h1{
@@ -50,7 +53,6 @@ section.top .container .top-wrapper .text p:nth-of-type(2){
     margin-top: 24px;
     line-height:32px;
 }
-
 section.top .container .top-wrapper .text a{
     padding-top: 32px;
     position: relative;
@@ -58,7 +60,6 @@ section.top .container .top-wrapper .text a{
     text-decoration: none;
     color:#fff;
 }
-
 section.top .container .top-wrapper .text a::before{
     content: "";
     background-color:#fff;
@@ -83,6 +84,84 @@ section.top .container .top-wrapper .text a::before{
     }
 
 }
+@media screen and (max-width:460px){
+    section.top .container .top-wrapper .text{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+
+section.features{
+    margin:72px 0;
+}
+
+section.features .container .header-wrapper h4{
+    color:gray;
+    font-weight: 300;
+    font-size: 13pt;
+    line-height: 23pt;
+}
+section.features .container{
+    padding: 0 16px;
+}
+section.features .container .features-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+section.features .container .features-wrapper .feature-item{
+    width:30%;
+    text-align: center;
+    margin:24px 0;
+}
+section.features .container .features-wrapper .feature-item img.icon{
+    width:30%;
+    height:auto;
+}
+
+section.features .container .features-wrapper .feature-item p:nth-of-type(1){
+    font-size:18pt;
+    font-weight: 400;
+    color:#000;
+    padding: 16px 0;
+}
+
+section.features .container .features-wrapper .feature-item p:nth-of-type(2){
+    font-size:13pt;
+    font-weight: 300;
+    color:grey;
+    line-height: 24pt;;
+
+}
+@media screen and (max-width:768px){
+    section.features .container .features-wrapper{
+        flex-direction: column;
+    }
+
+    section.features .container .features-wrapper .feature-item{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.footer {
     background-color:#d8d8d8;
