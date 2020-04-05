@@ -16,11 +16,9 @@ section.top .container .top-wrapper .text{
     color: #fff;
     right:0;
     bottom: 0px;
-    
 }
-section.footer {
-    background-color:#d8d8d8;
-}
+
+
 
 section.top .container .top-wrapper .text h1{
     font-size: 100pt;
@@ -34,10 +32,34 @@ section.top .container .top-wrapper .text p:nth-of-type(3){
     font-size: 18pt;
     font-weight: 400;
 }
+
+section.contact .map-wrapper {
+    background: url(../images/map_temp.png);
+    width:100%;
+    height:50vh;
+}
+
+section.contact .contact-wrapper {
+    background-color:#f7f7f7;
+}
+
+section.contact .contact-wrapper .container .form-wrapper {
+    background-color:#fff;
+    position:relative;
+    top:-100px;
+    width:100%;
+    padding:50px;
+}
+
+section.footer {
+    background-color:#d8d8d8;
+}
+
+
 section.footer .container .footer-wrapper {
     display:flex;
     width:100%;
-    padding:30px;
+    padding:30px 0;
     justify-content:space-between;
 }
 
