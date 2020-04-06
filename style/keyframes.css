@@ -1,0 +1,14 @@
+@keyframes arrow {
+    from {left:-50px;}
+    to {left:-38px}
+}
+
+@keyframes arrow1 {
+    from {right:-50px;}
+    to {right:-38px}
+}
+
+@keyframes dot {
+    from {color:#3ea592;margin-left:-15px}
+    to {color:#fff;margin-left:-10px}
+}
