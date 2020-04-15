@@ -182,6 +182,7 @@ section.news .news-wrapper:before {
 section.news .news-wrapper .container .news-pills {
     position:relative;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top:-30px;
 }
@@ -456,17 +457,23 @@ section.about{
     margin:72px 0;
     padding:72px 0;
 }
-section.about .container{
+
+section.about-sub{
+    background-color:#3ea592 ;
+    margin:72px 0 0;
+    padding:72px 0;
+}
+section.about-sub .container{
     padding:0 16px;
 }
-section.about .container .about-wrapper{
+section.about-sub .container .about-wrapper{
     text-align: center;
     justify-content: center;
     padding:0 16px;
     
 }
 
-section.about .container .about-wrapper p:nth-of-type(1){
+section.about-sub .container .about-wrapper p:nth-of-type(1){
     color: #fff;
     font-size: 21pt;
     line-height: 36pt;
@@ -474,7 +481,7 @@ section.about .container .about-wrapper p:nth-of-type(1){
     
 }
 
-section.about .container .about-wrapper p:nth-of-type(2){
+section.about-sub .container .about-wrapper p:nth-of-type(2){
     color: #fff;
     font-size: 18pt;
     line-height: 36pt;
@@ -483,7 +490,7 @@ section.about .container .about-wrapper p:nth-of-type(2){
     margin-top: 24px;;
     margin-bottom: 40px;
 }
-section.about .container .about-wrapper p:nth-of-type(2)::before{
+section.about-sub .container .about-wrapper p:nth-of-type(2)::before{
     content: "";
     display: block;
     position: absolute;
@@ -497,7 +504,7 @@ section.about .container .about-wrapper p:nth-of-type(2)::before{
     top:-8px;
 }
 @media screen and (max-width:460px){
-    section.about .container .about-wrapper p:nth-of-type(1){
+    section.about-sub .container .about-wrapper p:nth-of-type(1){
         font-size: 15pt;
         line-height: 24pt; 
     }
@@ -521,14 +528,65 @@ section.contact .map-wrapper {
 
 section.contact .contact-wrapper {
     background-color:#f7f7f7;
+    display: flex;
 }
 
 section.contact .contact-wrapper .container .form-wrapper {
+    display: flex;
+    justify-content: center;
     background-color:#fff;
     position:relative;
     top:-100px;
     width:100%;
     padding:50px;
+}
+
+@media screen and (max-width:992px){
+    section.contact .contact-wrapper .container .form-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    section.contact .contact-wrapper .container .form-wrapper .dane {
+        text-align: center;
+    }
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane {
+    padding:0 32px;
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane p:nth-of-type(1) {
+    font-size:24pt ;
+    font-weight:500 ;
+    color:#000 ;
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane p:nth-of-type(2) {
+    font-size:14pt ;
+    font-weight:300 ;
+    color:silver ;
+    padding: 16px 0;
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane p:nth-of-type(3) {
+    font-size:18pt ;
+    font-weight:300 ;
+    color:black ;
+    padding: 16px 0;
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane p:nth-of-type(4) {
+    font-size:18pt ;
+    font-weight:300 ;
+    color:black ;
+    padding: 16px 0;
+}
+
+section.contact .contact-wrapper .container .form-wrapper .dane p:nth-of-type(5) {
+    font-size:18pt ;
+    font-weight:300 ;
+    color:black ;
+    padding: 16px 0;
 }
 
 section.footer {
@@ -560,3 +618,239 @@ section.footer .container .footer-wrapper button {
         padding-top:40px;
     }
 }
+
+section.long-text{
+    margin-top:72px;
+}
+section.long-text .container{
+    padding: 0 16px;
+}
+section.long-text .container .long-text-wrapper{
+    justify-content: center;
+    text-align: center;
+}
+section.long-text .container .long-text-wrapper p{
+    font-size: 16pt;
+    line-height: 26pt;
+    color:grey;
+}
+@media screen and (max-width:460px){
+    section.long-text .container .long-text-wrapper p{
+        font-size: 13pt;
+        line-height: 23pt;
+    }
+
+}
+
+section.team{
+    background-color: #f3f3f3;
+    padding:72px 0;
+
+}
+section.team .container{
+    padding:0 16px;
+}
+section.team .container .team-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.team .container .team-wrapper .team-item{
+    background-color: #fff;
+    width:32%;
+    height:auto;
+    position: relative;
+    margin-bottom:24px;
+
+}
+
+section.team .container .team-wrapper .team-item::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:2px;
+    bottom:0;
+    background-color:#39A38F ;
+}
+section.team .container .team-wrapper .team-item p:nth-of-type(1){
+    font-size:18pt ;
+    font-weight: 400;
+    color:grey ;
+    padding:16px 16px 4px;
+
+}
+section.team .container .team-wrapper .team-item p:nth-of-type(2){
+    font-size:13pt ;
+    font-weight: 300;
+    color:silver ;
+    padding:4px 16px 16px
+
+}
+section.team .container .team-wrapper .team-item div{
+    width:100%;
+    height:260px;
+    background-size: cover;
+}
+
+@media screen and (max-width:992px){
+    section.team .container .team-wrapper .team-item{
+        width:48%;
+
+    
+    }
+
+}
+@media screen and (max-width:460px){
+    section.team .container .team-wrapper .team-item{
+        width:100%;
+    
+    }
+
+}
+
+
+section.app .container .header-wrapper h4{
+    font-size: 13pt;
+    font-weight: 300;
+    color:silver;
+}
+
+section.app .container {
+    padding: 0 16px;
+}
+
+section.app .container  .app-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 72px 0;
+}
+
+section.app .container  .app-wrapper .app-image{
+    width:40%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+section.app .container  .app-wrapper .app-image img{
+    width:150px;
+    height:auto;
+    
+}
+
+section.app .container  .app-wrapper .numbers-app{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    
+
+}
+
+section.app .container  .app-wrapper .numbers-app .number{
+    margin:24px;
+
+}
+
+section.app .container  .app-wrapper .numbers-app .number p:nth-of-type(1){
+    font-size: 50pt;
+    font-weight: 700;
+    color:#39A38F;
+}
+
+section.app .container  .app-wrapper .numbers-app .number p:nth-of-type(2){
+    font-size: 18pt;
+    font-weight: 400;
+    color:grey;
+}
+
+section.app .container .textapp-wrapper{
+    text-align: center;
+    padding: 24px 0px;
+}
+
+section.app .container .textapp-wrapper p{
+    color:silver;
+    font-size: 13pt;
+    line-height: 24pt;
+    font-weight: 300;
+}
+
+section.app .container .presentation-wrapper{
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section.app .container .presentation-wrapper .presentation{
+    width:30%;
+    text-align: center;
+    margin:16px 0;
+}
+
+section.app .container .presentation-wrapper .presentation img{
+    width:100%;
+    height: auto;
+}
+
+section.app .container .presentation-wrapper .presentation p{
+    font-size: 16pt;
+    font-weight: 300;
+    color:#39A38F;
+    position: relative;
+    margin-bottom:40px;
+}
+
+section.app .container .presentation-wrapper .presentation p::after{
+    content: "";
+    position: absolute;
+    width:30%;
+    height: 1px;
+    background-color: grey;
+    margin:0 auto;
+    left:0;
+    right:0;
+    bottom:-20px;
+
+}
+
+@media screen and (max-width:768px){
+    section.app .container  .app-wrapper .app-image{
+        width:100%;
+        height:auto;
+    }
+
+    section.app .container .presentation-wrapper .presentation{
+        width:30%;
+    }
+
+    section.app .container .textapp-wrapper{
+        text-align: center;
+        padding:0px;
+    }
+}
+
+@media screen and (max-width:468px){
+    section.app .container .presentation-wrapper .presentation{
+        width:100%;
+    }
+}
+
+section.headline .container{
+    padding:0 16px;
+}
+
+
+
+
+
+
+
+
+
