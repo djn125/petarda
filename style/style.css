@@ -40,15 +40,21 @@ section.top .container .top-wrapper .text h1{
     font-size: 100pt;
     font-weight: 600;
     padding-bottom: -24px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
 }
 
-section.top .container .top-wrapper .text h1::after{
+
+
+
+/* section.top .container .top-wrapper .text h1::after{
     content:".";
     display:inline;
     animation: dot 2s infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-}
+} */
 
 section.top .container .top-wrapper .text p:nth-of-type(1){
     font-size: 51pt;

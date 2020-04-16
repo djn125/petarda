@@ -12,3 +12,17 @@
     from {color:#3ea592;margin-left:-15px}
     to {color:#fff;margin-left:-10px}
 }
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+      fill:#fff;
+    }
+  }
+
+
+  
+
+
+
+  
