@@ -12,8 +12,8 @@
         <div class="container">
             <div class="menu-wrapper">
                 <div><img src="images/rorun_logo.jpg" alt=""></div>
-                <div class="burger"><div class="burger-col"></div></div>
-                <nav class="menu-un">
+                <div class="burger" id="burgerson1"><div class="burger-col"></div></div>
+                <nav class="menu-un" id="burgerson">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">O nas</a></li>
@@ -156,7 +156,18 @@
         </div>
     </section>
 
-
+    <script>
+        function lista() {
+            var element = document.getElementById("burgerson");
+            element.classList.toggle("menu-un");
+            var element1 = document.getElementById("burgerson1");
+            element1.classList.toggle("burger1");
+          }
+    
+          var button = document.getElementById("burgerson1");
+    
+          button.onclick = lista;
+    </script>
 
 </body>
 </html>

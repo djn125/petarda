@@ -28,6 +28,7 @@ section.menu .container div.menu-wrapper ul {
     list-style-type: none;
     padding:0;
     display:flex;
+    transition: all .3s;
 }
 
 section.menu .container div.menu-wrapper ul li {
