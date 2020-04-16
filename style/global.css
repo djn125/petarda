@@ -83,7 +83,7 @@ h3::after {
 }
 
 .cta-wh:hover {
-    background-color: none;
+    background-color: #3ea592;
     color:#fff;
     border:2px solid #fff;
 }
