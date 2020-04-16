@@ -61,6 +61,9 @@ section.menu .container div.menu-wrapper div.facebook-icon {
     section.menu {
         opacity: 1;
     }
+    .menu-un {
+        display:none;
+    }
 
     section.menu .container div.menu-wrapper {
         flex-wrap: wrap;
@@ -111,23 +114,23 @@ section.menu .container div.menu-wrapper div.facebook-icon {
         top:-13px;
     }
 
-    .burger:hover .burger-col::before {
+    .burger1 .burger-col::before {
         transform: rotate(-45deg);
         top:0;
         background:#3ea592;
     }
 
-    .burger:hover .burger-col::after {
+    .burger1 .burger-col::after {
         transform: rotate(45deg);
         background:#3ea592;
         top:0;
     }
 
-    .burger:hover .burger-col {
+    .burger1 .burger-col {
         background:#fff;
     }
     
-    .burger:focus ul {
+    .burger1 ul {
         display: flex;
     }
 }
