@@ -26,10 +26,6 @@ form input {
     height:40px;
 }
 
-form .fo:focus p{
-    margin:100px;
-}
-
 
 form textarea {
     height:100px;
